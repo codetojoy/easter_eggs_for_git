@@ -27,13 +27,18 @@ git push origin master
 * `cd` to this directory
 * run tests: `gradle test`
 
-#### Steps
+#### Steps as Bob
 
-* `git add build.gradle src/**/*.java`
-    * This adds files _to the index_.
-* `git status`
-    * Observe/confirm that the index looks correct.
-* `git commit -m "first commit"`
-    * This stores changes in _the index_ into the _local repository_.
-* `git push origin master` 
-    * Update the _remote repository_ with changes from the local repository.
+* as Bob, edit `Users.java` and add a simple method *above* `findUsersByName`
+* e.g. `public String fromBob() { return "bob"; }`
+* perform [the standard commit/push steps](./reference_doc/Commit.md)
+
+#### Steps as Alice
+
+* as Alice, edit `Users.java` and add a simple method *below* `findUsersByName`
+* e.g. `public String fromAlice() { return "alice"; }`
+* confirm tests: `gradle test`
+* Before we commit, we want to fetch any changes by others (e.g. Bob):
+`git pull origin master`
+* Observe new `fromBob` method in `Users.java` 
+* perform [the standard commit/push steps](./reference_doc/Commit.md)
