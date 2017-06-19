@@ -29,8 +29,8 @@ git push origin master
 
 #### Steps as Bob
 
-* as Bob, edit `Users.java` and add a simple method *above* `findUsersByName`
-* e.g. `public String fromBob() { return "bob"; }`
+* as Bob, edit `User.java` and add a simple comment
+* e.g. `// TODO: copyright notice`
 * perform [the standard commit/push steps](../reference_doc/Commit.md)
 
 #### Steps as Alice
