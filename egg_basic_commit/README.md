@@ -13,7 +13,7 @@
 #### Steps
 
 * `git add build.gradle src/**/*.java`
-    * This adds files _to the index_.
+    * This adds files _to the index_; we typically say _stage for commit_.
 * `git status`
     * Observe/confirm that the index looks correct.
 * `git commit -m "first commit"`
