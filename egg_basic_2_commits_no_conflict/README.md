@@ -31,7 +31,7 @@ git push origin master
 
 * as Bob, edit `Users.java` and add a simple method *above* `findUsersByName`
 * e.g. `public String fromBob() { return "bob"; }`
-* perform [the standard commit/push steps](./reference_doc/Commit.md)
+* perform [the standard commit/push steps](../reference_doc/Commit.md)
 
 #### Steps as Alice
 
@@ -41,4 +41,4 @@ git push origin master
 * Before we commit, we want to fetch any changes by others (e.g. Bob):
 `git pull origin master`
 * Observe new `fromBob` method in `Users.java` 
-* perform [the standard commit/push steps](./reference_doc/Commit.md)
+* perform [the standard commit/push steps](../reference_doc/Commit.md)
