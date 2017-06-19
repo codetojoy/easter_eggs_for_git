@@ -4,7 +4,7 @@ package net.codetojoy.example;
 import java.util.*;
 
 public class Users {
-    public int fromBob() { return 5150; }
+    public String fromBob() { return "bob"; }
 
     public User findUserByName(String name, List<User> users) {
         User result = null;
