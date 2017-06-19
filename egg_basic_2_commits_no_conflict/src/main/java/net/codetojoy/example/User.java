@@ -1,4 +1,6 @@
 
+// TODO: add copyright notice
+
 package net.codetojoy.example;
 
 public class User {
