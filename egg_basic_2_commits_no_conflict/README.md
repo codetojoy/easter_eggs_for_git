@@ -11,9 +11,11 @@
 * in this directory, run: `../generate_project.sh` 
 * run tests: `gradle test`
 * execute these steps:
-`git add build.gradle src/**/*.java`
-`git commit -m "first commit"`
-`git push origin master` 
+```
+git add build.gradle src/**/*.java
+git commit -m "first commit"
+git push origin master 
+```
 
 #### Setup as Alice
 
@@ -23,6 +25,7 @@
     * e.g. `git clone ...`
 * set `EGGS_GIT_HOME` env var to be `~/easter_eggs_for_git` directory
 * `cd` to this directory
+* run tests: `gradle test`
 
 #### Steps
 
