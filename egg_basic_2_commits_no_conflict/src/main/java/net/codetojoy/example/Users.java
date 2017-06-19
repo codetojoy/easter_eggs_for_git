@@ -16,4 +16,6 @@ public class Users {
 
         return result;
     }
+
+    public String fromAlice() { return "alice"; }
 }
