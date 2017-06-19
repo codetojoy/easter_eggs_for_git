@@ -42,3 +42,5 @@ git push origin master
 `git pull origin master`
 * Observe new `fromBob` method in `Users.java` 
 * perform [the standard commit/push steps](../reference_doc/Commit.md)
+* there should be no conflicts
+
