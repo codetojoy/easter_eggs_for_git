@@ -9,6 +9,7 @@ git pull origin master
 </pre></p></details>
 </details>
 <br/>
+
 * assuming there are no conflicts ...
 * confirm tests: `gradle test`
 * use Tortoise/WinMerge to confirm changes (possibly pair with someone)
@@ -19,6 +20,7 @@ git status
 </pre></p></details>
 </details>
 <br/>
+
 * stage for commit (by adding to the index):
 <details><summary>Hint:</summary>
 <p><pre>
@@ -27,6 +29,7 @@ git add src/**/*.java
 </pre></p></details>
 </details>
 <br/>
+
 * confirm status of index
 * commit and push
 <details><summary>Hint:</summary>
