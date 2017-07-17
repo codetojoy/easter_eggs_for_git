@@ -1,41 +1,56 @@
 
 #### Scenario
 
-* working with branches and tags 
+* working with branches and tags in a manner similar to SVN legacy 
+
+#### Tools
+    * ensure you have Bash, Gradle, Git
+    * install Tortoise for Git
+    * [optional] install `ungit`: `npm install -g ungit`. This is one way to view Git changes.
+
+#### Setup part 1
+
+* if you have created a `YOURNAME_tmp_sandbox_2017` repo, delete it on GitHub with [these steps](../reference_doc/DeleteRepo.md)
 
 #### Setup
 
-* create a new repo on GitHub, and clone it in a new folder `trunk`
-* optional way to get some starter code:
+* create a new repo on GitHub, and clone it in a new folder `master`
+    * call the repo `johndoe_tmp_sandbox_2017` (using your name)
+* [optional] get some starter code:
     * clone this repo into some directory (e.g. `eggs`)
     * set `EGGS_GIT_HOME` env var to be `~/eggs/easter_eggs_for_git` directory
-    * in `trunk`, run: `${EGGS_GIT_HOME}/generate_project.sh` 
+        * `export EGGS_GIT_HOME=[PATH]/eggs/easter_eggs_for_git`
+    * in `master/johndoe_tmp_sandbox_2017`, run: `$EGGS_GIT_HOME/generate_project.sh` 
     * confirm tests: `gradle test`
+    * view `~/src/main/java/com/example/App.java` to understand it
+    * run the application: `gradle -q clean run`
     * stage: `git add .gitignore build.gradle src`
+    * confirm: `git status`
     * commit: `git commit -m "message here"`
     * push: `git push origin master`
+    * confirm changes on remote repo webpage
 
-#### Step 1: tag trunk/master as V 1.0.0
+#### Step 1: tag master as V 1.0.0
 
 * assume we have just released V 1.0.0
-* in a terminal window we'll call _trunk terminal_
-* to tag the master branch:
+* in a terminal window we'll call _master terminal_
+* let's tag the `master` branch:
     * tag: `git tag v-1.0.0`
     * confirm: `git tag`
     * push: `git push origin v-1.0.0`
-    * observe new tag on remote repo webpage
+    * observe new tag on remote repo webpage (look for 'release' link)
 
 #### Step 2: create, tag maintenance branch
 
 * create a new terminal window we'll call _maint terminal_
 * create `maintenance` folder
-* clone repo into this folder
+* clone repo into this folder, cd into `maintenance/johndoe_tmp_sandbox_2017`
 * create branch: `git branch maintenance master`
 * confirm: `git branch`
 * switch branch: `git checkout maintenance`
 * confirm: `git branch`
 * push: `git push origin maintenance`
-* confirm branch on repo
+* confirm branch on remote repo webpage
 * we can tag the maintenance branch:
 ```
 git tag maint-v-1.0.0
@@ -46,35 +61,44 @@ git push origin maint-v-1.0.0
 * `git add branch.txt`
 * `git commit -m "message here"`
 * push: `git push origin maintenance`
-* observe new file on remote repo
+* observe new file on remote repo in `maintenance` branch but not on `master` branch
 
 #### Step 3: work continues on maintenance branch
 
-* assume that work is done in the maintenance branch and is pushed to trunk
+* in _maintenance terminal_ ...
+* in `App.java` change `VERSION_INFO` to `V 1.0.1 maintenance`
+* run the application: `gradle -q clean run`
+* commit and push to the remote `maintenance` branch
+* assume other bug-fixes have been made to this branch (and replicated in `master` branch, as we do with legacy SVN system)
 
 #### Step 4: work continues on master
 
-* in _trunk terminal_, make a change and then commit and push
-* e.g. add a comment `// V 1.1.1 comment` to a `build.gradle` file, then:
-```
-git add build.gradle
-git commit -m "new comment"
-git push origin master
-```
+* in _master terminal_ ...
+* in `App.java` change `VERSION_INFO` to `V 1.1.0 master`
+* run the application: `gradle -q clean run`
+* in `App.java` change version to `V 1.1.0 master`
+* commit and push to the remote `master` branch
 
-#### Step 5: release V 1.0.1
+#### Step 5: release V 1.0.1 from maintenance branch
 
-* in _maint terminal_, rename `maintenance` branch to `maint-v-1.0.0` branch: 
+* in _maint terminal_ ...
+* tag `maintenance` branch as maint-v-1.0.1
 ```
-git branch -m maintenance maint-v-1.0.0
-git push -u origin maint-v-1.0.0
+git tag v-1.0.1
+git tag
+git push origin v-1.0.1
+```
+* rename `maintenance` branch to `maint-v-1.0.1` branch: 
+```
+git branch -m maintenance maint-v-1.0.1
+git push -u origin maint-v-1.0.1
 git push origin :maintenance
 ```
-* return to step 1 to tag master as "V 1.0.1"
+* confirm on remote repo that `maintenance` branch is now `maint-v-1.0.1`
+* return to step 1 to tag master as "V 1.1.0"
 * return to step 2 to re-create the maintenance branch
 
 #### Notes
 
 * Tags are read-only snapshots in time.
-* The command `git rebase` is a method to apply changes from one branch to another, but it is wise to start with a simple methodology.
-
+* Branches are analogous to those in SVN.
