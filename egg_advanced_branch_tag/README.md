@@ -19,7 +19,11 @@
 * create a new repository called `YOURNAME_tmp_sandbox_2017` (using your name)
 * create a folder called `master` on your machine, inside clone the repo from GitHub
 <details><summary>Hint for last item:</summary>
-<p><pre>git clone </pre></p></details>
+<p><pre>
+cd master
+# change YOURNAME as appropriate
+git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
+</pre></p></details>
 <br/>
 
 #### Setup part 3 (add code to repo)
