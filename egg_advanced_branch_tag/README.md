@@ -10,27 +10,38 @@
 * install Tortoise for Git
 * [optional] install `ungit`: `npm install -g ungit`. This is one way to view Git changes.
 
-#### Setup part 1
+#### Setup part 1 (delete old repo)
 
 * if you have created a `YOURNAME_tmp_sandbox_2017` repo, delete it on GitHub with [these steps](../reference_doc/DeleteRepo.md)
 
-#### Setup
+#### Setup part 2 (create repo)
 
-* create a new repo on GitHub, and clone it in a new folder `master`
-    * call the repo `johndoe_tmp_sandbox_2017` (using your name)
-* [optional] get some starter code:
-    * clone this repo into some directory (e.g. `eggs`)
-    * set `EGGS_GIT_HOME` env var to be `~/eggs/easter_eggs_for_git` directory
-        * `export EGGS_GIT_HOME=[PATH]/eggs/easter_eggs_for_git`
-    * in `master/johndoe_tmp_sandbox_2017`, run: `$EGGS_GIT_HOME/generate_project.sh` 
+* create a new repository called `YOURNAME_tmp_sandbox_2017` (using your name)
+* create a folder called `master` on your machine, inside clone the repo from GitHub
+<details><summary>Hint for last item:</summary>
+<p><pre>git clone </pre></p></details>
+<br/>
+
+#### Setup part 3 (add code to repo)
+
+* clone this repo (easter_eggs_for_git) into a folder (e.g. `eggs`)
+* set `EGGS_GIT_HOME` env var to be `~/eggs/easter_eggs_for_git` directory
+    * `export EGGS_GIT_HOME=[PATH]/eggs/easter_eggs_for_git`
+* in `master/YOURNAME_tmp_sandbox_2017`, run: `$EGGS_GIT_HOME/generate_project.sh` 
     * confirm tests: `gradle test`
     * view `~/src/main/java/com/example/App.java` to understand it
     * run the application: `gradle -q clean run`
-    * stage: `git add .gitignore build.gradle src`
-    * confirm: `git status`
-    * commit: `git commit -m "message here"`
-    * push: `git push origin master`
-    * confirm changes on remote repo webpage
+* add, commit, push the `src` tree, `build.gradle`, and `.gitignore`
+<details><summary>Hint for last item:</summary>
+<p><pre>
+git add .gitignore build.gradle src
+git status
+git commit -m "message here"
+git push origin master
+</pre></p></details>
+</details>
+<br/>
+* confirm changes on remote repo webpage
 
 #### Step 1: tag master as V 1.0.0
 
