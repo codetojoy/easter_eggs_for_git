@@ -2,11 +2,13 @@
 #### Scenario
 
 * working with branches and tags in a manner similar to SVN legacy 
+* uses a `master` branch and a `maintenance` branch
 
 #### Tools
-    * ensure you have Bash, Gradle, Git
-    * install Tortoise for Git
-    * [optional] install `ungit`: `npm install -g ungit`. This is one way to view Git changes.
+
+* ensure you have Bash, Gradle, Git
+* install Tortoise for Git
+* [optional] install `ungit`: `npm install -g ungit`. This is one way to view Git changes.
 
 #### Setup part 1
 
