@@ -37,16 +37,7 @@ git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
     * confirm tests: `gradle test`
     * `cat ~/src/main/java/com/example/App.java` to understand it
     * run the application: `gradle -q clean run`
-* add, commit, push the `src` folder, `build.gradle`, and `.gitignore`
-<details><summary>Hint for last item:</summary>
-<p><pre>
-git add .gitignore build.gradle src
-git status
-git commit -m "message here"
-git push origin master
-</pre></p></details>
-</details>
-<br/>
+* add, commit, push the `src` folder, `build.gradle`, and `.gitignore`. [Here](../reference_doc/Commit.md) are generic steps.
 * confirm changes on remote repo webpage
 
 #### Step 1: tag master as V 1.0.0

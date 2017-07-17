@@ -1,20 +1,38 @@
 
-#### Commit steps
+#### Generic Steps to commit / push
 
-* use `git pull origin master` to pull changes from remote repo
+* Pull changes from remote repo
+<details><summary>Hint:</summary>
+<p><pre>
+# if using the master branch:
+git pull origin master
+</pre></p></details>
+</details>
+<br/>
 * assuming there are no conflicts ...
 * confirm tests: `gradle test`
 * use Tortoise/WinMerge to confirm changes (possibly pair with someone)
-* examine files, then stage for commit (by adding to the index):
-```
+* check status of the index
+<details><summary>Hint:</summary>
+<p><pre>
 git status
+</pre></p></details>
+</details>
+<br/>
+* stage for commit (by adding to the index):
+<details><summary>Hint:</summary>
+<p><pre>
+# this is just an example of adding Java files
 git add src/**/*.java
-```
-* examine index, then commit and push:
-```
-git status
+</pre></p></details>
+</details>
+<br/>
+* confirm status of index
+* commit and push
+<details><summary>Hint:</summary>
+<p><pre>
 git commit -m "don't forget to write a decent message"
 git push origin master 
-```
-
-
+</pre></p></details>
+</details>
+<br/>
