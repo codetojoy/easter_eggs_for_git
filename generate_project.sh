@@ -4,7 +4,7 @@ if [ "${EGGS_GIT_HOME}" == "" ] ; then
     echo "Please set EGGS_GIT_HOME variable"
 fi
 
-PACKAGE_DIR=net/codetojoy/example
+PACKAGE_DIR=com/example
 
 mkdir -p src/main/java/$PACKAGE_DIR
 mkdir -p src/test/java/$PACKAGE_DIR
