@@ -1,5 +1,5 @@
 
-package net.codetojoy.example;
+package com.example;
 
 public class App {
     private static final String VERSION_INFO = "V 1.0 master";

@@ -1,5 +1,5 @@
 
-package net.codetojoy.example;
+package com.example;
 
 import java.util.*;
 

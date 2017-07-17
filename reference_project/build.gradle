@@ -10,4 +10,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-mainClassName = 'net.codetojoy.example.App'
+mainClassName = 'com.example.App'
