@@ -1,14 +1,12 @@
 
 #### Scenario
 
-* working with branches and tags in a manner similar to SVN legacy 
-* uses a `master` branch and a `maintenance` branch
+* Illustate branches and tags in a manner similar to SVN legacy.
+* This uses a `master` branch and a `maintenance` branch and assumes that devs will work in separate folders for each branch.
 
 #### Tools
 
-* ensure you have Bash, Gradle, Git
-* install Tortoise for Git
-* [optional] install `ungit`: `npm install -g ungit`. This is one way to view Git changes.
+* more info [here](../reference_doc/Tools.md)
 
 #### Setup part 1 (delete old repo)
 
@@ -40,63 +38,81 @@ git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
 * add, commit, push the `src` folder, `build.gradle`, and `.gitignore`. [Here](../reference_doc/Commit.md) are generic steps.
 * confirm changes on remote repo webpage
 
-#### Step 1: tag master as V 1.0.0
+#### Step 1: tag master branch as V 1.0.0
 
 * assume we have just released V 1.0.0
 * in a terminal window we'll call _master terminal_
 * let's tag the `master` branch:
-    * tag: `git tag v-1.0.0`
+    * tag: `git tag v-1.0.0-milestone`
     * confirm: `git tag`
-    * push: `git push origin v-1.0.0`
-    * observe new tag on remote repo webpage (look for 'release' link)
+    * push: `git push origin v-1.0.0-milestone`
+* observe new tag on remote repo webpage (look for 'release' link)
 
-#### Step 2: create, tag maintenance branch
+#### Step 2: create maintenance branch
 
 * create a new terminal window we'll call _maint terminal_
 * create `maintenance` folder
-* clone repo into this folder, cd into `maintenance/johndoe_tmp_sandbox_2017`
+* clone repo into this folder
+<details><summary>Hint for last item:</summary>
+<p><pre>
+# change repo as appropriate:
+git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
+</pre></p></details>
+</details>
+<br/>
+
+* `cd maintenance/YOURNAME_tmp_sandbox_2017`
 * create branch: `git branch maintenance master`
 * confirm: `git branch`
 * switch branch: `git checkout maintenance`
 * confirm: `git branch`
 * push: `git push origin maintenance`
 * confirm branch on remote repo webpage
+
+#### Step 3: tag maintenance branch
+
 * we can tag the maintenance branch:
 ```
-git tag maint-v-1.0.0
+git tag maint-v-1.0.0-milestone
 git tag
-git push origin maint-v-1.0.0
+git push origin maint-v-1.0.0-milestone
 ```
-* as a sanity check: `echo "maint v-1.0.0" > branch.txt`
-* `git add branch.txt`
-* `git commit -m "message here"`
-* push: `git push origin maintenance`
-* observe new file on remote repo in `maintenance` branch but not on `master` branch
+* observe new tag on remote repo webpage (look for 'release' link)
 
-#### Step 3: work continues on maintenance branch
+#### Step 4: work continues on maintenance branch
 
 * in _maintenance terminal_ ...
 * in `App.java` change `VERSION_INFO` to `V 1.0.1 maintenance`
 * run the application: `gradle -q clean run`
-* commit and push to the remote `maintenance` branch
+* add and commit `App.java` but do not push (yet)
+<details><summary>Hint for last item:</summary>
+<p><pre>
+git status
+git add src/**/App.java
+git commit -m "useful message here"
+</pre></p></details>
+<br/>
+
+* push to `maintenance` branch: `git push origin maintenance`
 * assume other bug-fixes have been made to this branch (and replicated in `master` branch, as we do with legacy SVN system)
 
-#### Step 4: work continues on master
+#### Step 5: work continues on master branch
 
 * in _master terminal_ ...
 * in `App.java` change `VERSION_INFO` to `V 1.1.0 master`
 * run the application: `gradle -q clean run`
-* in `App.java` change version to `V 1.1.0 master`
-* commit and push to the remote `master` branch
+* add, commit, and push to the remote `master` branch. [Here](../reference_doc/Commit.md) are generic steps.
 
-#### Step 5: release V 1.0.1 from maintenance branch
+#### Step 6: release V 1.0.1 from maintenance branch
+
+* In this step, assume we want to release V 1.0.1 from the maintenance branch. Per legacy process, we want to tag the milestone, and rename the maintenance branch.
 
 * in _maint terminal_ ...
-* tag `maintenance` branch as maint-v-1.0.1
+* tag `maintenance` branch as `maint-v-1.0.1-milestone`:
 ```
-git tag v-1.0.1
+git tag maint-v-1.0.1-milestone
 git tag
-git push origin v-1.0.1
+git push origin maint-v-1.0.1-milestone
 ```
 * rename `maintenance` branch to `maint-v-1.0.1` branch: 
 ```
@@ -105,8 +121,27 @@ git push -u origin maint-v-1.0.1
 git push origin :maintenance
 ```
 * confirm on remote repo that `maintenance` branch is now `maint-v-1.0.1`
+
+#### Step 7: tag master branch and cut new maintenance branch
+
 * return to step 1 to tag master as "V 1.1.0"
 * return to step 2 to re-create the maintenance branch
+
+#### Step 8: explore repo
+
+* in brand new terminal and folder ...
+* create `sandbox` folder
+* clone the repo 
+<details><summary>Hint for last item:</summary>
+<p><pre>
+cd sandbox
+# change repo as appropriate:
+git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
+</pre></p></details>
+<br/>
+
+* view history with: `git log --oneline --decorate --graph --all`
+* alternately, view history with `ungit`
 
 #### Notes
 
