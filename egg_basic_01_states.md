@@ -15,5 +15,13 @@
 * `cd /c/git_training/01_basic_states`
 * follow [these steps](./reference_doc/SetupApp.md) to setup an app in this folder
 
-### Step 1: tag master branch as V 1.0.0
+### Exercise 1: happy flow
+
+* view status and confirm that all files are currently untracked
+<details><summary>Hint for above step:</summary>
+<p><pre>
+git status
+</pre></p></details>
+<br/>
+
 
