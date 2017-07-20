@@ -6,7 +6,7 @@
 
 #### Tools
 
-* more info [here](../reference_doc/Tools.md)
+* more info [here](./reference_doc/Tools.md)
 
 #### Setup part 1 (create repo)
 
