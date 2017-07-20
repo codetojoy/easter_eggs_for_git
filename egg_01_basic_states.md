@@ -17,15 +17,15 @@
 
 ### Exercise 1: basic happy flow
 
-let's view _status_ and confirm that all files are currently untracked:
+* let's view _status_ and confirm that all files are currently untracked:
 
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git status
-    </pre></p></details>
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git status
+</pre></p></details>
 <br/>
 
-let's _stage_ the `src` folder and `build.gradle` file by adding to the index: 
+* let's _stage_ the `src` folder and `build.gradle` file by adding to the index: 
 
     <details><summary>Hint for this step:</summary>
     <p><pre>
