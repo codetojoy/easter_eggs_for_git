@@ -25,7 +25,7 @@ git status
 </pre></p></details>
 <br/>
 
-* let's _stage_ the `src` folder and `build.gradle` file by adding to the index: 
+* let's _stage_ the `src` folder and `build.gradle` file by _adding_ to the index: 
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
