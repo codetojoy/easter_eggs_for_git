@@ -18,35 +18,30 @@
 ### Exercise 1: basic happy flow
 
 * let's view _status_ and confirm that all files are currently untracked:
-<br/>
     <details><summary>Hint for this step:</summary>
     <p><pre>
     git status
     </pre></p></details>
 <br/>
 * let's _stage_ the `src` folder and `build.gradle` file by adding to the index: 
-<br/>
     <details><summary>Hint for this step:</summary>
     <p><pre>
     git add src build.gradle 
     </pre></p></details>
 <br/>
 * let's view _status_, confirm files are staged:
-<br/>
     <details><summary>Hint for this step:</summary>
     <p><pre>
     git status
     </pre></p></details>
 <br/>
 * let's _commit_ the files which are currently staged:
-<br/>
     <details><summary>Hint for this step:</summary>
     <p><pre>
     git commit -m "first commit"
     </pre></p></details>
 <br/>
 * let's view _status_:
-<br/>
     <details><summary>Hint for this step:</summary>
     <p><pre>
     git status
