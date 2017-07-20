@@ -11,8 +11,8 @@
 
 ### Setup part 1 (create repo)
 
-* in `/c/git_training`, create a new local repo: `git init 01_basic_states`
-* `cd /c/git_training/01_basic_states`
+* in `/c/git_training`, create a new local repo: `git init basic_states`
+* `cd /c/git_training/basic_states`
 * follow [these steps](./reference_doc/SetupApp.md) to setup an app in this folder
 
 ### Exercise 1: basic happy flow
