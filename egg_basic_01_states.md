@@ -15,13 +15,36 @@
 * `cd /c/git_training/01_basic_states`
 * follow [these steps](./reference_doc/SetupApp.md) to setup an app in this folder
 
-### Exercise 1: happy flow
+### Exercise 1: basic happy flow
 
-* let's view status and confirm that all files are currently untracked
-<details><summary>Hint for above step:</summary>
+* let's view _status_ and confirm that all files are currently untracked:
+<details><summary>Hint for this step:</summary>
 <p><pre>
 git status
 </pre></p></details>
 <br/>
-
+* let's _stage_ the `src` folder and `build.gradle` file by adding to the index: 
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git add src build.gradle 
+</pre></p></details>
+<br/>
+* let's view _status_, confirm files are staged:
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git status
+</pre></p></details>
+<br/>
+* let's _commit_ the files which are currently staged:
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git commit -m "first commit"
+</pre></p></details>
+<br/>
+* let's view _status_:
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git status
+</pre></p></details>
+<br/>
 
