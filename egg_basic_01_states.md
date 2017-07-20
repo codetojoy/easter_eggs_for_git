@@ -17,7 +17,7 @@
 
 ### Exercise 1: happy flow
 
-* view status and confirm that all files are currently untracked
+* let's view status and confirm that all files are currently untracked
 <details><summary>Hint for above step:</summary>
 <p><pre>
 git status
