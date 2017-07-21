@@ -25,11 +25,11 @@ git status
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
-git rm --cached src/**/User.java
+git reset HEAD src/**/User.java
 </pre></p></details>
 <br/>
 
-* view _status_, confirm files are staged:
+* view _status_, confirm the index is clean:
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
@@ -37,5 +37,5 @@ git status
 </pre></p></details>
 <br/>
 
-That's it! [Next exercise](./egg_02_basic_states.md)
+That's it! [Next exercise](./egg_03_basic_states.md)
 
