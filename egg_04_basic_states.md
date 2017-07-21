@@ -2,7 +2,7 @@
 ### Scenario
 
 * We'll modify `App.java`, stage it, commit, then undo.
-* To make things interesting, we'll also include `User` Java files in the commit.
+* To make things interesting, we'll also include `User` Java files in the commit (which we want to keep).
 * To fully understand this example, refer to [7.7 Git Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
 * For `HEAD` versus `ORIG_HEAD`, refer [here](https://stackoverflow.com/questions/964876)
 
