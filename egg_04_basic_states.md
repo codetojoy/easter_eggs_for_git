@@ -55,7 +55,7 @@ git commit -m "now version 1.0.1, plus User functionality"
 
 #### Move App.java from 'committed' back to 'staged'
 
-* We can remove `App.java` from the commit to the staging area: `git reset HEAD src/**/App.java`.
+* We can remove `App.java` from the commit to the staging area: `git reset HEAD src/**/App.java`
 * Confim the above by checking status.
 
 #### Move App.java from 'staged' back to original state 
