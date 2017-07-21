@@ -1,7 +1,7 @@
 
 #### Scenario
 
-* Happy path for a remote branch.
+* Happy path for a remote branch: multiple changes and an easy case for merging.
 * Reference [here](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
 #### Tools
