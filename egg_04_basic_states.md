@@ -67,6 +67,7 @@ git commit -m "now version 1.0.1, plus User functionality"
 
 * Finally, we re-use the original commit for the update: `git commit -c ORIG_HEAD`
     * Alter the commit message to be `just new User functionality!`
+    * Note that `ORIG_HEAD` is the value of `HEAD` before the `git reset`
 * Examine the log and observe the new commit: `git log --pretty=oneline --decorate`
     * Observe the commit now has the new message.
 
