@@ -1,40 +1,41 @@
 
+### Scenario
+
+* `User.java` is untracked. We'll stage it and then undo.
+
 ### Exercise 2: untracked -> staged (and undo)
 
-* view _status_ and confirm that all files are currently untracked:
+* Stage `User.java` by _adding_ to the index:
 
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git status
-    </pre></p></details>
-<br/>
-
-* _stage_ the `src` folder and `build.gradle` file by adding to the index: 
-
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git add src build.gradle 
-    </pre></p></details>
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git add src/**/User.java
+</pre></p></details>
 <br/>
 
 * view _status_, confirm files are staged:
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git status
-    </pre></p></details>
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git status
+</pre></p></details>
 <br/>
 
-* _commit_ the files which are currently staged:
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git commit -m "first commit"
-    </pre></p></details>
+* **Plot-twist**: requirements have changed! We no longer want `User.java` in the repo: remove from the index: 
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git rm --cached src/**/User.java
+</pre></p></details>
 <br/>
 
-* view _status_:
-    <details><summary>Hint for this step:</summary>
-    <p><pre>
-    git status
-    </pre></p></details>
+* view _status_, confirm files are staged:
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git status
+</pre></p></details>
 <br/>
+
+That's it! [Next exercise](./egg_02_basic_states.md)
 
