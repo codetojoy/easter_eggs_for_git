@@ -1,10 +1,10 @@
 
-
 ### Scenario
 
 * We'll modify `App.java`, stage it, commit, then undo.
 * To make things interesting, we'll also include `User` Java files in the commit.
 * To fully understand this example, refer to [7.7 Git Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
+* For `HEAD` versus `ORIG_HEAD`, refer [here](https://stackoverflow.com/questions/964876)
 
 ### Exercise 4: modified -> staged -> commit (and undo)
 
@@ -66,6 +66,8 @@ git commit -m "now version 1.0.1, plus User functionality"
 #### Move App.java from 'staged' back to original state 
 
 * Finally, we re-use the original commit for the update: `git commit -c ORIG_HEAD`
+    * Alter the commit message to be `just new User functionality!`
 * Examine the log and observe the new commit: `git log --pretty=oneline --decorate`
+    * Observe the commit now has the new message.
 
 That's it! [Back to Exercises listing](./Exercises.md)
