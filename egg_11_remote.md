@@ -20,8 +20,8 @@
 * clone the repo from GitHub
 <details><summary>Hint for last item:</summary>
 <p><pre>
-# change repo as appropriate:
-git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
+# REPO is a placeholder. Retrieve the value from the GitHub page for the repository
+git clone REPO
 </pre></p></details>
 <br/>
 
