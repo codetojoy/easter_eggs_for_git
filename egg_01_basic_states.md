@@ -25,11 +25,11 @@ git status
 </pre></p></details>
 <br/>
 
-* _stage_ the `src` folder and `build.gradle` file by _adding_ to the index: 
+* _stage_ the `App.java` file and `build.gradle` file by _adding_ to the index: 
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
-git add src build.gradle 
+git add src/**/App.java build.gradle 
 </pre></p></details>
 <br/>
 
@@ -56,5 +56,8 @@ git commit -m "first commit"
 git status
 </pre></p></details>
 <br/>
+
+* confirm commit by looking at the log:
+`git log --pretty=oneline --decorate`
 
 That's it! [Next exercise](./egg_02_basic_states.md)
