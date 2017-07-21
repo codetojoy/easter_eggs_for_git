@@ -6,11 +6,11 @@
 
 #### Tools
 
-* more info [here](../reference_doc/Tools.md)
+* more info [here](./reference_doc/Tools.md)
 
 #### Setup part 1 (delete old repo)
 
-* if you have created a `YOURNAME_tmp_sandbox_2017` repo, delete it on GitHub with [these steps](../reference_doc/DeleteRepo.md)
+* if you have created a `YOURNAME_tmp_sandbox_2017` repo, delete it on GitHub with [these steps](./reference_doc/DeleteRepo.md)
 
 #### Setup part 2 (create repo)
 
