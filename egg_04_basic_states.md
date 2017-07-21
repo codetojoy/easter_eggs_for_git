@@ -22,7 +22,7 @@ git status
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
-git add src/**/*.java
+git add src/**/User*.java
 </pre></p></details>
 <br/>
 
