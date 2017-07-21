@@ -50,7 +50,7 @@ git commit -m "now version 1.0.1, plus User functionality"
 
 * First, we restore the previous commit to its pre-commit state: `git reset --soft HEAD^` 
     * `HEAD` is _the last commit on the current branch_
-    * `HEAD^` is _the **parent** of the last commit on the current branch_.
+    * `HEAD^` is _the **parent** of the last commit on the current branch_
 * If you check status, you'll see the working directory is restored to the previous commit.
 
 #### Move App.java from 'committed' back to 'staged'
