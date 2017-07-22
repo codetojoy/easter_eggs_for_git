@@ -46,4 +46,42 @@ git commit -m "initial commit"
 * push changes to GitHub repo: `git push origin master`
 * examine history on GitHub repo to confirm commit has been pushed
 
+#### Step 3: Commit #1 via GitHub
+
+* Let's simulate work on `origin\master` so that the remote branch will be different.
+* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.1` and commit the change with the message `V 1.0.1`.
+
+#### Step 4: Commit #2 locally
+
+* In the local directory, edit `App.java`. Change `hello` to `bonjour`.
+* Confirm the app works with [these steps](./reference_doc/ConfirmApp.md)
+* Stage `App.java`, and commit the change locally.
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git add src/**/App.java
+git status
+git commit -m "French greeting"
+</pre></p></details>
+<br/>
+
+#### Step 5: Fetch updates from remote
+
+* Now, the local repo and the remote repo each have one commit.
+* To get commits from the remote server (without merging), run: `git fetch origin master`
+
+#### Step 6: Observe the situation, pre-merge
+
+* To see the commits performed on the remote repo, run: `git log HEAD..origin/master --oneline`
+* By checking `git status`, we can see that the merge can be _fast-forwarded_ (i.e. is super-easy).  
+
+#### Step 7: Merge
+
+* To merge the changes, run: `git pull origin master`
+* Observe the log: `git log --pretty=oneline -decorate`
+
+#### Step 8: Confirm
+
+* Run the app and confirm that it is V 1.0.1 with French greeting: `gradle -q clean run`
+
 That's it! [Next exercise](./egg_12_remote.md)
