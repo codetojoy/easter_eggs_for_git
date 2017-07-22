@@ -15,8 +15,8 @@
 #### Setup part 2 (create repo)
 
 * on GitHub, create a new repository called `YOURNAME_tmp_sandbox_2017` (using your name)
-* create folder: `mkdir -p /c/github_training/remote/master`
-* go to folder: `cd /c/github_training/remote/master`
+* create folder: `mkdir -p /c/github_training/workflow/master`
+* go to folder: `cd /c/github_training/workflow/master`
 * clone the repo from GitHub
 <details><summary>Hint for last item:</summary>
 <p><pre>
