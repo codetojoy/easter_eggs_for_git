@@ -72,16 +72,19 @@ git commit -m "French greeting"
 
 #### Step 6: Observe the situation, pre-merge
 
-* To see the commits performed on the remote repo, run: `git log HEAD..origin/master --oneline`
-* By checking `git status`, we can see that the merge can be _fast-forwarded_ (i.e. is super-easy).  
+* To see the commits locally, run: `git log --oneline` . Observe the "French greeting" commit, but not the "V 1.0.1" commit.
+* To see the commits performed on the remote repo, run: `git log HEAD..origin/master --oneline` . Observe the "V 1.0.1" commit.
+* Another confirmation, observe `git status`.
 
 #### Step 7: Merge
 
-* To merge the changes, run: `git pull origin master`
-* Observe the log: `git log --pretty=oneline -decorate`
+* To merge the changes, run: `git pull origin master`. For a commit message, simply use `merging commits`.
+* Observe the log: `git log --oneline -decorate`
+* Using `ungit` or another tool, look at the branch history. Note that merge commit has two parents.
 
 #### Step 8: Confirm
 
-* Run the app and confirm that it is V 1.0.1 with French greeting: `gradle -q clean run`
+* Run the app: `gradle -q clean run`
+* Confirm both commits: V 1.0.1 with French greeting.
 
 That's it! [Next exercise](./egg_12_remote.md)
