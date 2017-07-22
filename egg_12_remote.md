@@ -11,7 +11,7 @@
 #### Step 1: Commit #1 via GitHub
 
 * Let's simulate work on `origin\master` so that the remote branch will be different.
-* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.2` and commit the change with the message `V 1.0.2`.
+* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.2` and commit the change with the message "V 1.0.2".
 
 #### Step 2: Local work
 
@@ -32,7 +32,7 @@ git status
 
 #### Step 4: Attempt Merge
 
-* Attempt to merge with: `git pull origin master`. 
+* Attempt to merge with: `git merge origin/master`. 
 * Note that the merge complains about uncommitted work in `App.java`
 
 #### Step 5: Stash Pending Work
@@ -73,5 +73,9 @@ git commit -m "Spanish greeting"
 git push origin master
 </pre></p></details>
 <br/>
+
+### Notes
+
+* Note that `git pull origin master` combines `fetch` and `merge` into one command.
 
 That's it! [Next exercise](./egg_13_remote.md)
