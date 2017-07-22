@@ -13,5 +13,5 @@
     * 13 [worst-case Merge Conflict](./egg_13_remote.md)
 
 * Workflow
+    * 21 [general workflow](./egg_21_workflow.md)
     * 22 [branch / tag flow](./egg_22_workflow.md)
-
