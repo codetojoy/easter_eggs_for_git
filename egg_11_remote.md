@@ -78,7 +78,7 @@ git commit -m "French greeting"
 
 #### Step 7: Merge
 
-* To merge the changes, run: `git pull origin master`. For a commit message, simply use `merging commits`.
+* To merge the changes, run: `git pull origin master`. For a commit message, simply use "merging commits".
 * Observe the log: `git log --oneline -decorate`
 * Using `ungit` or another tool, look at the branch history. Note that merge commit has two parents.
 
