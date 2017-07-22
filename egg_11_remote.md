@@ -84,7 +84,7 @@ git commit -m "French greeting"
 
 #### Step 8: Confirm
 
-* Run the app: `gradle -q clean run`
+* Run the app: `./run.sh`
 * Confirm both commits: V 1.0.1 with French greeting.
 
 #### Step 9: Push 

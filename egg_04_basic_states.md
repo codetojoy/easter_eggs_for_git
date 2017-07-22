@@ -61,7 +61,7 @@ git commit -m "now version 1.0.1, plus User functionality"
 #### Move App.java from 'staged' back to original state 
 
 * We can unstage `App.java` back to its original state: `git checkout -- src/**/App.java`
-* Confirm that the version is now restored: `gradle -q clean run`
+* Confirm that the version is now restored: `./run.sh`
 
 #### Move App.java from 'staged' back to original state 
 
