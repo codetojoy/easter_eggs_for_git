@@ -11,10 +11,11 @@
 #### Step 1: Commit #1 via GitHub
 
 * Let's simulate work on `origin\master` so that the remote branch will be different.
-* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.3` and commit the change with the message `V 1.0.3`.
+* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.3` and commit the change with the message "V 1.0.3".
 
 #### Step 2: Local work
 
+* **Plot-twist**: the team has decided that the current version is "V 1.1.0".
 * In the local directory, edit `App.java`. Change the version to `V 1.1.0`.
 * Confirm the app works with [these steps](./reference_doc/ConfirmApp.md)
 * Stage `App.java`, and commit the change with "V 1.1.0".
@@ -45,14 +46,16 @@ git commit "V 1.1.0"
 #### Step 5.2: Resolution Option 2
 
 * Assume that "V 1.1.0" is correct and should be used over "V 1.0.3".
-* In the worst-case, we can allow the remote commit to "win", then perform a new commit with our change. 
-* First, copy `App.java` to a safe place.
-* Allow the "V 1.0.3" to "win" temporarily:
-```
-git checkout --theirs src/**/App.java
-./run.sh
-```
+* In this case, we want the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and perform some extra manual work. This is _not_ the "Git way" but is straight-forward.
+* The strategy: allow the remote commit to "win", then perform a new commit with our change. 
+
+* First, abort the merge: `git merge --abort`
+* Confirm that `App.java` has "V 1.1.0" and copy it to a safe place.
+* Next, attempt the merge again (it will fail): `git pull origin master`
+* Allow the "V 1.0.3" to "win" temporarily: `git checkout --theirs src/**/App.java`
+* Confirm the app is now "V 1.0.3": `./run.sh`
 * Use a diff tool (e.g. WinMerge) to add desired changes from the safe-place `App.java` to `App.java` 
+
 * Confirm, add, commit:
 ```
 ./run.sh
