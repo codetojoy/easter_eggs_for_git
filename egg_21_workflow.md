@@ -44,3 +44,4 @@ git merge orgin/master
 * For now, the take-away is that Bob will have a separate folder for the `maintenance` branch. This is identical to the legacy style with Subversion.
 * The steps above are the same, except use `maintenance` (or the appropriate branch name) in place of `master`.
 
+That's it! [Home](./Exercises.md)
