@@ -34,7 +34,7 @@ git commit "V 1.1.0"
 
 #### Step 4: Attempt Merge
 
-* Attempt to merge with: `git pull origin master`. 
+* Attempt to merge with: `git merge origin/master`. 
 * Note that the merge complains about a conflict.
 * View `App.java` (with `cat src/main/java/com/example/App.java`) to see it is now a conflict file.
 
@@ -51,12 +51,12 @@ git commit "V 1.1.0"
 
 * First, abort the merge: `git merge --abort`
 * Confirm that `App.java` has "V 1.1.0" and copy it to a safe place.
-* Next, attempt the merge again (it will fail): `git pull origin master`
+* Next, attempt the merge again (it will fail): `git merge origin/master`
 * Allow the "V 1.0.3" to "win" temporarily: `git checkout --theirs src/**/App.java`
 * Confirm the app is now "V 1.0.3": `./run.sh`
 * Use a diff tool (e.g. WinMerge) to add desired changes from the safe-place `App.java` to `App.java` 
 
-* Confirm, add, commit:
+* Confirm "V 1.1.0", add, commit:
 ```
 ./run.sh
 git add src/**/App.java
