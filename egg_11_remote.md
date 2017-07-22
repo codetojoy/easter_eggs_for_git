@@ -87,4 +87,8 @@ git commit -m "French greeting"
 * Run the app: `gradle -q clean run`
 * Confirm both commits: V 1.0.1 with French greeting.
 
+#### Step 9: Push 
+
+* To sync the merge with the remote repo, we push: `git push origin master`
+
 That's it! [Next exercise](./egg_12_remote.md)
