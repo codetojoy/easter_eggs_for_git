@@ -37,7 +37,7 @@ git clone REPO
 <p><pre>
 git add src/**/*.java build.gradle .gitignore
 git status
-git commit -m "initial commit"
+git commit -m "my App"
 </pre></p></details>
 <br/>
 
@@ -49,7 +49,7 @@ git commit -m "initial commit"
 #### Step 3: Commit #1 via GitHub
 
 * Let's simulate work on `origin\master` so that the remote branch will be different.
-* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.1` and commit the change with the message `V 1.0.1`.
+* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.1` and commit the change with the message "V 1.0.1".
 
 #### Step 4: Commit #2 locally
 
@@ -78,7 +78,7 @@ git commit -m "French greeting"
 
 #### Step 7: Merge
 
-* To merge the changes, run: `git pull origin master`. For a commit message, simply use "merging commits".
+* To merge the changes, run: `git merge origin/master`. For a commit message, simply use "merging commits".
 * Observe the log: `git log --oneline -decorate`
 * Using `ungit` or another tool, look at the branch history. Note that merge commit has two parents.
 
@@ -90,5 +90,9 @@ git commit -m "French greeting"
 #### Step 9: Push 
 
 * To sync the merge with the remote repo, we push: `git push origin master`
+
+### Notes
+
+* Note that `git pull origin master` combines `fetch` and `merge` into one command.
 
 That's it! [Next exercise](./egg_12_remote.md)
