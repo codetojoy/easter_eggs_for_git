@@ -16,5 +16,6 @@ cp $REF_PROJ_DIR/src/test/java/$PACKAGE_DIR/*.java src/test/java/$PACKAGE_DIR
 cp $REF_PROJ_DIR/build.gradle .
 
 cp $REF_PROJ_DIR/.gitignore .
+cp $REF_PROJ_DIR/run.sh .
 
 echo "Ready."
