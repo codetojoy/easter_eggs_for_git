@@ -167,14 +167,14 @@ git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
 ```
 git tag -l
 git checkout tags/v-1.0.0-milestone
-gradle -q clean run
+./run.sh
 ```
 * assume that we want to move to a specific commit (this will be in "detached HEAD"state but that is OK for now):
 ```
 git log --oneline
 # use a commit id in your terminal:
 git checkout abc1234
-gradle -q clean run
+./run.sh
 ``` 
 * to continue work from a specific tag or commit (and avoid "detached HEAD"), we create a new branch with the checkout. For example:
 ```
@@ -187,3 +187,5 @@ git checkout abc1234 -b bug6160
 
 * Tags are read-only snapshots in time.
 * Branches are analogous to those in SVN.
+
+That's it! [Back to Exercises listing](./Exercises.md)
