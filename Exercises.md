@@ -9,5 +9,9 @@
 
 * Remote
     * 11 [Happy Path](./egg_11_remote.md)
-    * 14 [Branch/Tag](./egg_14_remote.md)
+    * 12 [easy-case Merge Conflict](./egg_12_remote.md), handled with `git stash`
+    * 13 [worst-case Merge Conflict](./egg_13_remote.md)
+
+* Workflow
+    * 22 [branch / tag flow](./egg_22_workflow.md)
 
