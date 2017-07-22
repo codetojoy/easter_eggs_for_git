@@ -1,11 +1,14 @@
 
-### Basic Workflow
+### A Day in the Life: Developer Workflow.
 
 * This doc is an example developer workflow.
+* Assume the team has developers named _Alice_ and _Bob_.
 
-#### Generic Steps to commit / push
+#### 9 am
 
-* Pull changes from remote repo
+* Alice runs `git status` and has no work pending: a clean index.
+* Now is a good time to fetch/merge changes from remote repo. This can be done with the `pull` command:
+
 <details><summary>Hint:</summary>
 <p><pre>
 # if using the master branch:
