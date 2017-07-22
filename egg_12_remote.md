@@ -52,6 +52,26 @@ git status
 
 #### Step 8: Commit Spanish Greeting
 
-#### Step 8: Push Changes
+* Confirm the app runs as "V 1.0.2" with the Spanish greeting.
+* Stage `App.java` and commit the change with "Spanish greeting".
 
-That's it! [Next exercise](./egg_12_remote.md)
+<details><summary>Hint for this step:</summary>
+<p><pre>
+./run.sh
+git add src/**/App.java
+git status
+git commit -m "Spanish greeting"
+</pre></p></details>
+<br/>
+
+#### Step 9: Push Changes To Remote
+
+* Finally, sync the last commit with the remote repo.
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git push origin master
+</pre></p></details>
+<br/>
+
+That's it! [Next exercise](./egg_13_remote.md)
