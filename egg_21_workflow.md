@@ -33,6 +33,7 @@ git merge orgin/master
 
 ##### Commit steps
 
+* (In the short-term, be sure to _remain paired-up_ for these steps.)
 * Using `git commit` or TortoiseGit, commit the changes.
 * Push the changes to the remote repo with `git push origin master` (this assumes the current branch is `master`).
 
