@@ -29,17 +29,24 @@ git clone REPO
 
 * follow [these steps](./reference_doc/SetupApp.md) to setup an app in this folder
 
-#### Step 0: add, commit
+#### Setup part 4: add, commit
 
 * add and commit all `java` files, `build.gradle`, and `.gitignore`
 
 <details><summary>Hint for this step:</summary>
 <p><pre>
-git add src/**/*.java build.gradle .gitignore
+git add src/**/*.java build.gradle .gitignore 
+git add -f run.sh
 git status
 git commit -m "my App"
+git push origin master
 </pre></p></details>
 <br/>
+
+#### Setup part 5: push to GitHub
+
+* push changes to GitHub repo: `git push origin master`
+* examine history on GitHub repo to confirm commit has been pushed
 
 #### Step 1: tag master branch as V 1.0.0
 
@@ -54,17 +61,18 @@ git commit -m "my App"
 #### Step 2: create maintenance branch
 
 * create a new terminal window we'll call _maint terminal_
-* create `maintenance` folder
-* clone repo into this folder
+* create folder: `mkdir -p /c/git_training/workflow/maintenance`
+* go to folder: `cd /c/git_training/workflow/maintenance`
+* clone the remote repo into this folder
 <details><summary>Hint for last item:</summary>
 <p><pre>
-# change repo as appropriate:
-git clone https://github.com/codetojoy/YOURNAME_tmp_sandbox_2017.git
+# REPO is a placeholder. Retrieve the value from the GitHub page for the repository
+git clone REPO
 </pre></p></details>
 </details>
 <br/>
 
-* `cd maintenance/YOURNAME_tmp_sandbox_2017`
+* `cd YOURNAME_tmp_sandbox_2017`
 * create branch: `git branch maintenance master`
 * confirm: `git branch`
 * switch branch: `git checkout maintenance`
@@ -86,13 +94,14 @@ git push origin maint-v-1.0.0-milestone
 
 * in _maintenance terminal_ ...
 * in `App.java` change `VERSION_INFO` to `V 1.0.1 maintenance`
-* run the application: `gradle -q clean run`
+* run the application: `./run.sh`
 * add and commit `App.java` but do not push (yet)
+
 <details><summary>Hint for last item:</summary>
 <p><pre>
 git status
 git add src/**/App.java
-git commit -m "useful message here"
+git commit -m "V 1.0.1 maintenance fix"
 </pre></p></details>
 <br/>
 
@@ -103,8 +112,17 @@ git commit -m "useful message here"
 
 * in _master terminal_ ...
 * in `App.java` change `VERSION_INFO` to `V 1.1.0 master`
-* run the application: `gradle -q clean run`
-* add, commit, and push to the remote `master` branch. [Here](../reference_doc/Commit.md) are generic steps.
+* run the application: `./run.sh`
+* add, commit, and push to the remote `master` branch. 
+
+<details><summary>Hint for last item:</summary>
+<p><pre>
+git status
+git add src/**/App.java
+git commit -m "V 1.1.0 functionality"
+git push origin master
+</pre></p></details>
+<br/>
 
 #### Step 6: release V 1.0.1 from maintenance branch
 
