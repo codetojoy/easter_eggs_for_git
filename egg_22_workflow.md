@@ -29,6 +29,18 @@ git clone REPO
 
 * follow [these steps](./reference_doc/SetupApp.md) to setup an app in this folder
 
+#### Step 0: add, commit
+
+* add and commit all `java` files, `build.gradle`, and `.gitignore`
+
+<details><summary>Hint for this step:</summary>
+<p><pre>
+git add src/**/*.java build.gradle .gitignore
+git status
+git commit -m "my App"
+</pre></p></details>
+<br/>
+
 #### Step 1: tag master branch as V 1.0.0
 
 * assume we have just released V 1.0.0
