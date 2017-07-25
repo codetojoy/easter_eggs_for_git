@@ -48,8 +48,14 @@ git commit -m "my App"
 
 #### Step 3: Commit #1 via GitHub
 
-* Let's simulate work on `origin\master` so that the remote branch will be different.
-* Via the GitHub website, edit `App.java`. Change the version to `V 1.0.1` and commit the change with the message "V 1.0.1".
+* If paired, then the team should go to partner B's computer:
+    * `clone` the **same** repository created by partner A
+    * edit `App.java` so that version is `V 1.0.1`
+    * Stage and commit `App.java`
+    * push changes: `git push origin master`
+* If not paired:
+    * Let's simulate work on `origin\master` so that the remote branch will be different.
+    * Via the GitHub website, edit `App.java`. Change the version to `V 1.0.1` and commit the change with the message "V 1.0.1".
 
 #### Step 4: Commit #2 locally
 
