@@ -15,7 +15,7 @@
 * In `App.java`, add a new method using the initials of the partners. e.g. "JD" for John Doe and "AS" for Alice Smith.
 * Add this method using appropriate initials:
 ```
-private void greetingJDAS() {
+private static void greetingJDAS() {
     System.out.println("HELLO from JD and AS");
 }
 ```
