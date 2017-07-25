@@ -59,6 +59,7 @@ git commit -m "my App"
 
 #### Step 4: Commit #2 locally
 
+* If paired, return to partner A's computer
 * In the local directory, edit `App.java`. Change `hello` to `bonjour`.
 * Confirm the app works with [these steps](./reference_doc/ConfirmApp.md)
 * Stage `App.java`, and commit the change locally.

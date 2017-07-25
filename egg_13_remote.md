@@ -20,6 +20,7 @@
 
 #### Step 2: Local work
 
+* If paired, return to partner A's computer
 * **Plot-twist**: the team has decided that the current version is "V 1.1.0".
 * In the local directory, edit `App.java`. Change the version to `V 1.1.0`.
 * Confirm the app works with [these steps](./reference_doc/ConfirmApp.md)

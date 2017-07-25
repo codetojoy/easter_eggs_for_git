@@ -20,6 +20,7 @@
 
 #### Step 2: Local work
 
+* If paired, return to partner A's computer
 * In the local directory, edit `App.java`. Change `bonjour` to `hola`.
 * Confirm the app works with [these steps](./reference_doc/ConfirmApp.md)
 * Stage `App.java`, do not commit.
