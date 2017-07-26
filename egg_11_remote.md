@@ -15,6 +15,7 @@
 #### Setup part 2 (create repo)
 
 * on GitHub, create a new repository called `YOURNAME_tmp_sandbox_2017` (using your name)
+* If paired, add your partner as a collaborator for the repo
 * create folder: `mkdir -p /c/github_training/remote/master`
 * go to folder: `cd /c/github_training/remote/master`
 * clone the repo from GitHub
