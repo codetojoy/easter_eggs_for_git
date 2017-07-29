@@ -16,3 +16,6 @@
 * Workflow
     * 21 [general workflow](./egg_21_workflow.md)
     * 22 [branch / tag flow](./egg_22_workflow.md)
+
+* Use-cases
+    * 31 Given commit A, B, C, revert to A. [link](./egg_31_usecase.md)
