@@ -18,4 +18,5 @@
     * 22 [branch / tag flow](./egg_22_workflow.md)
 
 * Use-cases
-    * 31 Given commit A, B, C, revert to A. [link](./egg_31_usecase.md)
+    * 31 Commit A, B, C, revert to A. [link](./egg_31_usecase.md)
+    * 32 Commit A, tag A, commit B, view log. [link](./egg_32_usecase.md)
