@@ -75,5 +75,22 @@ git push origin master
 * confirm log:
 `git log --oneline`
 
+#### Step 5: revert to commit A
+
+* replace `HASH_FOR_COMMIT_A` with the appropriate value:
+```
+git log --oneline
+git reset --hard HASH_FOR_COMMIT_A
+git reset --soft HEAD@{1}
+git commit -m "revert to commit A"
+git log --oneline
+```
+
+#### Step 6: push
+
+* standard push, then confirm history on GitHub:
+```
+git push origin master
+```
 
 That's it! [Back to exercise listing](./Exercises.md)
