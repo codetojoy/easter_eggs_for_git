@@ -72,5 +72,8 @@ git status
 git commit -m "commit C"
 git push origin master
 ```
+* confirm log:
+`git log --oneline`
+
 
 That's it! [Back to exercise listing](./Exercises.md)
