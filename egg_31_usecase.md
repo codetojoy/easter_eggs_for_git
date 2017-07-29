@@ -1,7 +1,7 @@
 
 #### Scenario
 
-* Given commit A, B, C, D, revert to B
+* Given commit A, B, C revert to A
 * Reference [here](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
 #### Tools
@@ -37,6 +37,39 @@ git clone REPO
 git add src/**/*.java build.gradle .gitignore
 git status
 git commit -m "my App"
+git push origin master
+```
+
+#### Step 2: commit A
+
+* change _hello_ in `App.java` to _hello [A]_, then:
+```
+git add src/**/App.java
+./run.sh
+git status
+git commit -m "commit A"
+git push origin master
+```
+
+#### Step 3: commit B
+
+* change _hello_ in `App.java` to _hello [B]_, then:
+```
+git add src/**/App.java
+./run.sh
+git status
+git commit -m "commit B"
+git push origin master
+```
+
+#### Step 4: commit C
+
+* change _hello_ in `App.java` to _hello [C]_, then:
+```
+git add src/**/App.java
+./run.sh
+git status
+git commit -m "commit C"
 git push origin master
 ```
 
