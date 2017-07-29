@@ -21,3 +21,4 @@
     * 31 Commit A, B, C, revert to A. [link](./egg_31_usecase.md)
     * 32 Commit A, tag A, commit B, view log. [link](./egg_32_usecase.md)
     * 33 Revert a temporary repo for re-use. [link](./egg_33_usecase.md)
+    * 34 Create topic branch, make fix, merge into master. [link](./egg_34_usecase.md)
