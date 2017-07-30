@@ -43,3 +43,5 @@
     * updates staging area (aka _index_) with contents of what HEAD points to
     * updates working directory with contents of index
 
+
+[Back to Exercises listing](./Exercises.md)
