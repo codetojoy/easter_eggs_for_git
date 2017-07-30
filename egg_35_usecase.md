@@ -1,7 +1,7 @@
 
 #### Scenario
 
-* create a local topic branch, do work, merge
+* create a remote topic branch, do work, merge
 
 #### Tools
 
@@ -59,6 +59,8 @@ git branch issue5150
 git branch
 git checkout issue5150
 ```
+* push branch:
+`git push origin issue5150`
 
 #### Step 4: write code for issue 5150
 
@@ -69,6 +71,8 @@ git add src/**/App.java
 git status
 git commit -m "fix issue 5150"
 ```
+* push change:
+`git push origin issue5150`
 
 #### Step 5: merge branch into master
 
