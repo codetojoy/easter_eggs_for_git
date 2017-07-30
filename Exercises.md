@@ -1,5 +1,5 @@
 
-### Exercises
+### Exercises, Doc
 
 * Basic States
     * 01 [Happy Path](./egg_01_basic_states.md)
@@ -22,3 +22,6 @@
     * 32 Commit A, tag A, commit B, view log. [link](./egg_32_usecase.md)
     * 33 Revert a temporary repo for re-use. [link](./egg_33_usecase.md)
     * 34 Create topic branch, make fix, merge into master. [link](./egg_34_usecase.md)
+
+* Documentation
+    * 51 [reset summary](./egg_51_doc.md)
