@@ -22,6 +22,10 @@
 | | unstage files  | unstage files |
 | | | undo work  | 
 
+* in above, _undo C_ means an undo for `git commit` that created C
+* in above, _unstage files_ means an undo for `git add` that staged C
+* in above, _undo work_ means an undo on changes to the files in C (destructive!)
+
 #### --soft 
 
 * assume `HEAD -> master -> xyz5150`
