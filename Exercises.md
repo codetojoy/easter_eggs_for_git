@@ -22,6 +22,7 @@
     * 32 Commit A, tag A, commit B, view log. [link](./egg_32_usecase.md)
     * 33 Revert a temporary repo for re-use. [link](./egg_33_usecase.md)
     * 34 Create local topic branch, make fix, merge into master. [link](./egg_34_usecase.md)
+    * 34.1 Create local topic branch, make fix, rebase into master. [link](./egg_34_1_usecase.md)
     * 35 Create remote topic branch, make fix, merge into master. [link](./egg_35_usecase.md)
     * 36 Simple stash. [link](./egg_36_usecase.md)
     * 37 reset --soft. [link](./egg_37_usecase.md)
