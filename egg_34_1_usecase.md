@@ -99,6 +99,7 @@ git log --oneline
 git branch
 git checkout master
 git merge issue5151
+git push origin master
 git log --oneline
 ```
 
