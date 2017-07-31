@@ -24,6 +24,9 @@
     * 34 Create local topic branch, make fix, merge into master. [link](./egg_34_usecase.md)
     * 35 Create remote topic branch, make fix, merge into master. [link](./egg_35_usecase.md)
     * 36 Simple stash. [link](./egg_36_usecase.md)
+    * 37 reset --soft. [link](./egg_37_usecase.md)
+    * 38 reset --mixed. [link](./egg_38_usecase.md)
+    * 39 reset --hard. [link](./egg_39_usecase.md)
 
 * Documentation
     * 51 [reset summary](./egg_51_doc.md)
