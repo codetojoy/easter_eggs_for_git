@@ -23,7 +23,7 @@ a5ddb5d Initial commit
 ```
 
 * Assume that we want to reset the repo, locally and remotely, to commit `a5ddb5d`.
-* Assume further that we want to re-generate the project and commit locally.
+* Assume further that we want to re-generate the project, stage `src build.gradle .gitignore`, and commit locally.
 * This can all be done with:
 ```
 ./reset_repo.sh a5ddb5d
