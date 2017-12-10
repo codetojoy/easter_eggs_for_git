@@ -14,4 +14,5 @@
     * Reading list includes Chapters 1,2,3, and 5
     * Chapter 7 is excellent for advanced material (e.g. 7.3 Stashing, 7.7 Reset Demystified)
 * [Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
+* [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
 
