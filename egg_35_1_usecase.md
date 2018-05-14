@@ -42,20 +42,9 @@ git commit -m "my App"
 git push origin master
 ```
 
-#### Step 2: commit A
+#### Step 2: create branch for 'issue 5150'
 
-* change _hello_ in `App.java` to _hello [A]_, then:
-```
-git add src/**/App.java
-./run.sh
-git status
-git commit -m "commit A"
-git push origin master
-```
-
-#### Step 3: create branch for 'issue 5150'
-
-* Issue 5150 states that _hello [A]_ should be _Greetings_, and cannot be hardcoded
+* Issue 5150 states that we need a new `Service.java` file
 * create and checkout branch:
 ```
 git branch issue5150
@@ -65,11 +54,11 @@ git checkout issue5150
 * push branch:
 `git push origin issue5150`
 
-#### Step 4: write code for issue 5150
+#### Step 3: write code for issue 5150 (work X)
 
-* edit `App.java` to replace _hello [A]_ with _Greetings_, then:
+* add new `Service.java`, then:
 ```
-git add src/**/App.java
+git add src/**/Service.java
 ./run.sh
 git status
 git commit -m "fix issue 5150"
@@ -77,13 +66,30 @@ git commit -m "fix issue 5150"
 * push change:
 `git push origin issue5150`
 
-#### Step 5: merge branch into master
+#### Step 4: add code to master (work Y)
 
 ```
 git branch
 git checkout master
-git merge issue5150
-git push origin master
 ```
+* add new `Endpoint.java`, then:
+```
+git add src/**/Endpoint.java
+./run.sh
+git status
+git commit -m "new endpoint"
+```
+* push change:
+`git push origin master`
+
+#### Step 5: merge work Y from master into branch
+
+```
+git branch
+git checkout issue5150
+git merge master
+git push origin issue5150
+```
+* confirm that `Service.java` and `Endpoint.java` are in the branch
 
 That's it! [Back to exercise listing](./Exercises.md)
